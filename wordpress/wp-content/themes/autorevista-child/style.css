@@ -1,0 +1,100 @@
+/*
+Theme Name: AutoRevista Child
+Theme URI: https://example.com/autorevista
+Description: Tema hijo ligero para web editorial de reviews y noticias de coches.
+Author: AutoRevista
+Author URI: https://example.com
+Template: generatepress
+Version: 1.0.0
+Text Domain: autorevista-child
+*/
+
+:root {
+  --ar-bg: #ffffff;
+  --ar-text: #111827;
+  --ar-muted: #6b7280;
+  --ar-border: #e5e7eb;
+  --ar-accent: #0f172a;
+  --ar-card: #f8fafc;
+  --ar-radius: 14px;
+}
+
+body {
+  font-family: "Inter", "System UI", -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--ar-text);
+  background: var(--ar-bg);
+  line-height: 1.7;
+}
+
+.site-main,
+.inside-article,
+.entry-content {
+  max-width: 1100px;
+}
+
+.ar-section {
+  margin-block: 56px;
+}
+
+.ar-hero {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1.3fr 1fr;
+  padding: 28px;
+  border: 1px solid var(--ar-border);
+  background: linear-gradient(180deg, #fff, #f9fbff);
+  border-radius: var(--ar-radius);
+}
+
+.ar-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 18px;
+}
+
+.ar-card {
+  padding: 18px;
+  border: 1px solid var(--ar-border);
+  border-radius: var(--ar-radius);
+  background: var(--ar-card);
+}
+
+.ar-card h3 {
+  font-size: 1.08rem;
+  margin: 0 0 8px;
+}
+
+.ar-meta {
+  color: var(--ar-muted);
+  font-size: 0.92rem;
+}
+
+.ar-cta-brands {
+  padding: 24px;
+  border-left: 4px solid var(--ar-accent);
+  background: #f4f8ff;
+  border-radius: 10px;
+}
+
+.ar-newsletter {
+  border: 1px dashed var(--ar-border);
+  border-radius: var(--ar-radius);
+  padding: 22px;
+  text-align: center;
+}
+
+.ar-btn {
+  display: inline-block;
+  margin-top: 12px;
+  background: var(--ar-accent);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .ar-hero {
+    grid-template-columns: 1fr;
+  }
+}
