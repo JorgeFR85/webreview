@@ -1,4 +1,5 @@
 /*
+<<<<<<< HEAD
 Theme Name: Apex Motor Child
 Theme URI: https://example.com/apex-motor
 Description: Tema hijo ligero para revista de reviews y noticias de coches.
@@ -6,10 +7,20 @@ Author: Apex Motor
 Author URI: https://example.com
 Template: generatepress
 Version: 1.1.0
+=======
+Theme Name: AutoRevista Child
+Theme URI: https://example.com/autorevista
+Description: Tema hijo ligero para web editorial de reviews y noticias de coches.
+Author: AutoRevista
+Author URI: https://example.com
+Template: generatepress
+Version: 1.0.0
+>>>>>>> origin/main
 Text Domain: autorevista-child
 */
 
 :root {
+<<<<<<< HEAD
   --ar-bg: #0b1020;
   --ar-surface: #121a31;
   --ar-surface-soft: #161f3b;
@@ -20,11 +31,21 @@ Text Domain: autorevista-child
   --ar-accent-2: #22d3ee;
   --ar-card: #111a33;
   --ar-radius: 16px;
+=======
+  --ar-bg: #ffffff;
+  --ar-text: #111827;
+  --ar-muted: #6b7280;
+  --ar-border: #e5e7eb;
+  --ar-accent: #0f172a;
+  --ar-card: #f8fafc;
+  --ar-radius: 14px;
+>>>>>>> origin/main
 }
 
 body {
   font-family: "Inter", "System UI", -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--ar-text);
+<<<<<<< HEAD
   background: radial-gradient(circle at 15% 0%, #121d3e, #0b1020 45%);
   line-height: 1.7;
 }
@@ -66,6 +87,16 @@ a {
 .ar-brand-sub {
   color: var(--ar-muted);
   font-size: 0.9rem;
+=======
+  background: var(--ar-bg);
+  line-height: 1.7;
+}
+
+.site-main,
+.inside-article,
+.entry-content {
+  max-width: 1100px;
+>>>>>>> origin/main
 }
 
 .ar-section {
@@ -76,11 +107,18 @@ a {
   display: grid;
   gap: 24px;
   grid-template-columns: 1.3fr 1fr;
+<<<<<<< HEAD
   padding: 30px;
   border: 1px solid var(--ar-border);
   background: linear-gradient(180deg, rgba(19, 29, 56, 0.95), rgba(15, 22, 43, 0.95));
   border-radius: var(--ar-radius);
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
+=======
+  padding: 28px;
+  border: 1px solid var(--ar-border);
+  background: linear-gradient(180deg, #fff, #f9fbff);
+  border-radius: var(--ar-radius);
+>>>>>>> origin/main
 }
 
 .ar-card-grid {
@@ -109,7 +147,11 @@ a {
 .ar-cta-brands {
   padding: 24px;
   border-left: 4px solid var(--ar-accent);
+<<<<<<< HEAD
   background: linear-gradient(180deg, #132038, #101a2f);
+=======
+  background: #f4f8ff;
+>>>>>>> origin/main
   border-radius: 10px;
 }
 
@@ -118,18 +160,29 @@ a {
   border-radius: var(--ar-radius);
   padding: 22px;
   text-align: center;
+<<<<<<< HEAD
   background: var(--ar-surface-soft);
+=======
+>>>>>>> origin/main
 }
 
 .ar-btn {
   display: inline-block;
   margin-top: 12px;
+<<<<<<< HEAD
   background: linear-gradient(120deg, var(--ar-accent), var(--ar-accent-2));
   color: #031325;
   padding: 10px 16px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 700;
+=======
+  background: var(--ar-accent);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+>>>>>>> origin/main
 }
 
 @media (max-width: 900px) {

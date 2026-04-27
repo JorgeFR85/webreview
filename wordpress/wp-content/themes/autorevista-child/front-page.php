@@ -10,6 +10,7 @@ if (! defined('ABSPATH')) {
 get_header();
 ?>
 <main id="primary" class="site-main">
+<<<<<<< HEAD
     <section class="ar-brand" aria-label="Apex Motor branding">
         <div class="ar-brand-mark">AM</div>
         <div>
@@ -18,6 +19,8 @@ get_header();
         </div>
     </section>
 
+=======
+>>>>>>> origin/main
     <section class="ar-section ar-hero">
         <div>
             <p class="ar-meta"><?php esc_html_e('Review destacada', 'autorevista-child'); ?></p>
