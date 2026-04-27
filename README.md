@@ -71,6 +71,7 @@ Ejemplo mínimo de payload para generar borrador:
   ]
 }
 ```
+<<<<<<< HEAD
 
 
 ## Seed automático de review inicial
@@ -113,3 +114,5 @@ Flujo recomendado:
 2. Tú revisas estilo, hechos y enlaces.
 3. Llamas a `approve-draft/{id}` para moverlo a `pending`.
 4. Publicas manualmente cuando esté validado.
+=======
+>>>>>>> origin/main
