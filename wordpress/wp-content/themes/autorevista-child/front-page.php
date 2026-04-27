@@ -10,6 +10,17 @@ if (! defined('ABSPATH')) {
 get_header();
 ?>
 <main id="primary" class="site-main">
+<<<<<<< HEAD
+    <section class="ar-brand" aria-label="Apex Motor branding">
+        <div class="ar-brand-mark">AM</div>
+        <div>
+            <div class="ar-brand-name"><?php esc_html_e('Apex Motor', 'autorevista-child'); ?></div>
+            <div class="ar-brand-sub"><?php esc_html_e('Reviews y noticias de automoción con criterio editorial.', 'autorevista-child'); ?></div>
+        </div>
+    </section>
+
+=======
+>>>>>>> origin/main
     <section class="ar-section ar-hero">
         <div>
             <p class="ar-meta"><?php esc_html_e('Review destacada', 'autorevista-child'); ?></p>

@@ -16,6 +16,11 @@ add_action('admin_init', function (): void {
         return;
     }
 
+<<<<<<< HEAD
+    update_option('blogname', 'Apex Motor');
+
+=======
+>>>>>>> origin/main
     $slug = 'toyota-rav4-2026-gr-sport-plug-in-hybrid-review';
 
     $existing = get_page_by_path($slug, OBJECT, 'review');

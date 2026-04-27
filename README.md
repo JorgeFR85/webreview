@@ -21,7 +21,11 @@ Completa el asistente de instalación de WordPress (título del sitio, usuario a
 
 En **Apariencia > Temas**:
 - activa el tema padre (GeneratePress / Astra / Kadence),
+<<<<<<< HEAD
+- activa después **Apex Motor Child**.
+=======
 - activa después **AutoRevista Child**.
+>>>>>>> origin/main
 
 > Nota: en `style.css` del child theme ahora está `Template: generatepress`. Si usas Astra o Kadence, cambia ese valor antes de activar el tema hijo.
 
@@ -72,6 +76,9 @@ Ejemplo mínimo de payload para generar borrador:
 }
 ```
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
 
 
 ## Seed automático de review inicial
@@ -114,5 +121,11 @@ Flujo recomendado:
 2. Tú revisas estilo, hechos y enlaces.
 3. Llamas a `approve-draft/{id}` para moverlo a `pending`.
 4. Publicas manualmente cuando esté validado.
+<<<<<<< HEAD
+
+
+Apex Motor Child añade un logo tipográfico "AM" en Home y una paleta moderna/minimalista en modo oscuro.
 =======
+=======
+>>>>>>> origin/main
 >>>>>>> origin/main
