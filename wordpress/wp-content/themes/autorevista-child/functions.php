@@ -44,3 +44,5 @@ add_action('init', function (): void {
         'hierarchical' => false,
     ]);
 });
+
+require_once get_stylesheet_directory() . '/inc/seed-content.php';

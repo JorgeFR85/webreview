@@ -71,3 +71,48 @@ Ejemplo mínimo de payload para generar borrador:
   ]
 }
 ```
+<<<<<<< HEAD
+
+
+## Seed automático de review inicial
+
+Al acceder al admin con un usuario administrador, el tema crea automáticamente (una sola vez) la review inicial:
+- **Toyota RAV4 2026 GR Sport Plug-in Hybrid**
+- Slug: `toyota-rav4-2026-gr-sport-plug-in-hybrid-review`
+
+Esto te permite ver la Home con una review real sin cargar contenido manualmente.
+
+
+## IA para subir artículos y aprobarlos después
+
+Ahora el plugin soporta también borradores de **artículos (post)** con revisión humana:
+
+- `POST /wp-json/autorevista/v1/generate-article-draft` (crea artículo en `draft`)
+- `POST /wp-json/autorevista/v1/approve-draft/{id}` (lo pasa a `pending` para aprobación editorial)
+
+Ejemplo para crear artículo en borrador:
+
+```bash
+curl -X POST "http://localhost:8080/?rest_route=/autorevista/v1/generate-article-draft" \
+  -H "Content-Type: application/json; charset=utf-8" \
+  -u "jorge:TU_APP_PASSWORD" \
+  --data-binary '{
+    "title": "Toyota actualiza su estrategia PHEV en 2026",
+    "angle": "Noticia de mercado con contexto para comprador",
+    "verified_facts": ["Dato oficial 1", "Dato oficial 2"],
+    "sources": [
+      {"label": "Fuente oficial 1", "url": "https://example.com/1"},
+      {"label": "Fuente oficial 2", "url": "https://example.com/2"}
+    ],
+    "categories": ["Noticias"],
+    "tags": ["Toyota", "PHEV", "Mercado"]
+  }'
+```
+
+Flujo recomendado:
+1. La IA crea el artículo en `draft`.
+2. Tú revisas estilo, hechos y enlaces.
+3. Llamas a `approve-draft/{id}` para moverlo a `pending`.
+4. Publicas manualmente cuando esté validado.
+=======
+>>>>>>> origin/main
