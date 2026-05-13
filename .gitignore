@@ -1,0 +1,17 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Local recordings output
+meeting_recorder_app/recordings/
+recordings/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
