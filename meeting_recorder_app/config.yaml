@@ -1,0 +1,4 @@
+whisper_model: base
+language: es
+output_dir: ./recordings
+summary_provider: local_heuristic
